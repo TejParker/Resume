@@ -1,5 +1,117 @@
 /**index.wxss**/
-.userinfo {
+.container {
+  width: 100%;
+  /* height: 1100rpx; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  background-color: papayawhip;
+  /* box-sizing: border-box; */
+} 
+
+#header{
+  width: 100%;
+  height: 400rpx;
+  background-color: #040e18;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+}
+
+.bgimg{
+  display: block;
+  width: 750rpx;
+  height: 400rpx;
+}
+
+.masterimg{
+  display: block;
+  width: 500rpx;
+  height: 300rpx;
+  position: absolute;
+  margin-left: -100rpx;
+  margin-top: 50rpx;
+}
+
+.telimg{
+  display: block;
+  width: 70rpx;
+  height: 70rpx;
+  position: absolute;
+  margin-top: -120rpx;
+  margin-left: 250rpx;
+}
+#content{/*这种是对所以id的设置*/
+  width: 100%;
+  height: 1700rpx;
+  background-color: #040e18;
+  /* background-color: paleturquoise; */
+}
+
+.contentHeaderImg{
+  display: block;
+  width: 750rpx;
+  height: 112rpx;
+}
+
+.textArea{/*这种是对class的设置*/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 50rpx;
+}
+
+.textCenter{
+  align-items: center;
+}
+
+text{/*这种是对所以标签的设置，如果要对特定的text进行设置的话可以对text加class，因为class的优先级会高于标签的优先级，也就是说可以覆盖低优先级的*/
+  display: block;
+  font-size: 16px;
+  color: white;
+  margin: 10rpx;
+}
+
+.textH1{
+  font-size: 18px;
+  color: aqua;
+  margin: 25rpx 0 25rpx -10rpx;
+}
+
+swiper, swiper-item, .sheet{
+  width: 100%;
+  height: 100%;
+}
+
+.contentImg{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60rpx 0 0 0;
+}
+
+.movieInWorkImg{
+  display: block;
+  width: 650rpx;
+  height: 381rpx;
+
+}
+
+.sheet{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* .userinfo {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,4 +130,4 @@
 
 .usermotto {
   margin-top: 200px;
-}
+} */

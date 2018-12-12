@@ -1,6 +1,107 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
+  <view id="header">
+    <image class='bgimg' src='./img/background.jpg' mode='aspectFit'></image>
+    <image class='masterimg' src='./img/pengyuyan.jpg' mode='aspectFit'></image>
+    <view bindtap='onDialer'>
+      <image class='telimg' src='./img/dialer.png' mode='aspectFit'></image>
+    </view>
+  </view>
+  <view id='content'>
+    <swiper>
+      <swiper-item>
+        <view class='sheet'>
+          <view class='contentHeader'>
+            <image class='contentHeaderImg' src='./img/basicInfo.png'></image>
+          </view>
+          <view class='textArea'>
+            <text class='textH1'>{{name}}</text>
+            <text>男 | 36岁（1982年3月24日）</text>
+            <text>中国台湾影视男演员、歌手</text>
+            <text>香港电影金像奖</text>
+            <text>台湾电影金马奖</text>
+            <text>大众电影百花奖</text>
+            <text>华语电影传媒大奖 </text>
+            <text>福布斯中国名人榜第46名</text>
+            <text>-> 阳光</text>
+            <text>-> 帅气</text>
+            <text>-> 真挚</text>
+            <text>-> 幽默</text>
+            <text>联系方式： 186-9148-7859</text>
+            <text>Email: laplace1015@outlook.com</text>
+          </view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class='sheet'>
+          <view class='contentHeader'>
+            <image class='contentHeaderImg' src='./img/workexp.png'></image>
+          </view>
+          <view class='contentImg'>
+            <image class='movieInWorkImg' mode='aspectFit' src='./img/xbyz.jpg'></image>
+          </view>
+          <view class='textArea'>
+            <text class='textH1'>最新作品</text>
+            <text>邪不压正</text>
+            <text>彭于晏 饰 李天然</text>
+            <text>习武少年，公开身份是协和医院医生。</text>
+            <text>和朱潜龙师出同门，却结下血海深仇。</text>
+            <text>15年后，李天然在美特训练变身“李小龙”。</text>
+            <text>领受任务归国，同时也为私仇而来。</text>
+            <text class='textH1'>幕后花絮</text>
+            <text>彭于晏和廖凡在开机之前进入成家班的训练基地，接受一个多月的封闭式训练，每天拉筋练功夫。两人最后的一场大决战戏份，拍了二十几天，不是用武术招式，完全是生死肉搏。</text>
+          </view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class='sheet'>
+          <view class='contentHeader'>
+            <image class='contentHeaderImg' src='./img/education.png'></image>
+          </view>
+          <view class='contentImg'>
+            <image class='movieInWorkImg' mode='aspectFit' src='./img/ubc.jpg'></image>
+          </view>
+          <view class='textArea'>
+            <text class='textH1'>简介</text>
+            <text>温哥华大学 | 商科</text>
+            <text>彭于晏出生于单亲家庭，自小父母离异，13岁随家人移民加拿大。
+            他并不喜欢读书，却考上了温哥华最好的大学，读商科。他说，其实我一直知道，前途与爱好是两回事。他爱漫画，爱篮球，但在看不到前途的时候，他从不执著。</text>
+          </view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class='sheet'>
+          <view class='contentHeader'>
+            <image class='contentHeaderImg' src='./img/contacts.png'></image>
+          </view>
+          <view class='contentImg'>
+            <!-- <text>洪金宝  | 义父</text> -->
+            <image class='movieInWorkImg' mode='aspectFit' src='./img/Phjb.jpg'></image>
+          </view>
+          <view class='textArea'>
+            <text>洪金宝  | 义父</text>
+          </view>
+          <view class='contentImg'>
+            <!-- <text>梁家辉  | “舅父”</text> -->
+            <image class='movieInWorkImg' mode='aspectFit' src='./img/Pljh.jpg'></image>
+          </view>
+          <view class='textArea textCenter'>
+            <text>梁家辉  | "舅父"</text>
+          </view>
+          <view class='contentImg'>
+            <!-- <text>余文乐  | 好"基友"</text> -->
+            <image class='movieInWorkImg' mode='aspectFit' src='./img/Pywl.jpg'></image>
+          </view>
+          <view class='textArea textCenter'>
+            <text>余文乐  | 好"基友"</text>
+          </view>
+  
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <!-- <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
@@ -9,5 +110,5 @@
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
-  </view>
+  </view> -->
 </view>
